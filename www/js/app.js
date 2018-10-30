@@ -31,7 +31,7 @@ angular.module('steem.witness', ['ionic', 'steem.witness.controllers', 'steem.wi
       });*/
     };
     if (!$rootScope.$storage.socket) {
-      $rootScope.$storage.socket = "wss://steemit.com/wspa";
+      $rootScope.$storage.socket = "wss://rpc.smoke.io";
     }
 
     $rootScope.$watch('$storage.socket',function(newv, oldv) {
